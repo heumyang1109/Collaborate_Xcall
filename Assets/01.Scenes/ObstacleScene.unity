@@ -216,6 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 519420031}
   groundPrefab: {fileID: 1705078630766051669, guid: 561442d495bd6084a80cd2ab2f1d86fe, type: 3}
+<<<<<<< HEAD
   stackCount: 0
   sizeX: 0
   moveSpeed: 3
@@ -226,6 +227,9 @@ MonoBehaviour:
   nextPos: {x: 0, y: 0, z: 0}
   nextPos2: {x: 0, y: 0, z: 0}
   count: 0
+=======
+  extraMargin: 0
+>>>>>>> 6c698530e2ffd8ed14955fd21bed502f079fc3f0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 519420031}
   groundPrefab: {fileID: 1705078630766051669, guid: 561442d495bd6084a80cd2ab2f1d86fe, type: 3}
+<<<<<<< HEAD
   stackCount: 0
   sizeX: 0
   moveSpeed: 3
@@ -443,6 +448,9 @@ MonoBehaviour:
   nextPos: {x: 0, y: 0, z: 0}
   nextPos2: {x: 0, y: 0, z: 0}
   count: 0
+=======
+  extraMargin: 0
+>>>>>>> 6c698530e2ffd8ed14955fd21bed502f079fc3f0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
