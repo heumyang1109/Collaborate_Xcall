@@ -9,14 +9,19 @@ public class PlayerControll : MonoBehaviour
     [SerializeField] private float jumpFos = 5.5f;
     [SerializeField] private float rotationSpeed = 5.5f;
 
+    private GameManager gameManager;
     Rigidbody2D rb;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gameManager = FindAnyObjectByType<GameManager>();
     }
     private void Update()
     {
+        if (gameManager == null || !gameManager.isGameStart)
+            return;
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector2.up * jumpFos, ForceMode2D.Impulse);
@@ -24,7 +29,7 @@ public class PlayerControll : MonoBehaviour
 
         //캐릭터 몸 방향이 점프누를때 위로, 떨어질때 아래로
         transform.rotation = Quaternion.Euler(0, 0, rb.velocity.y * rotationSpeed);
-                
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -37,7 +42,7 @@ public class PlayerControll : MonoBehaviour
             if (gameManager != null)
             {
                 gameManager.EndGame();
-                
+
             }
         }
         //태그Wall에 닿으면 겜끝
