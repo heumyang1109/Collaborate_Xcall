@@ -16,9 +16,10 @@ public class SpawnObstacle : MonoBehaviour
 
     private Vector3 startWorldPosition = new Vector3(10f,-4.85f,0f); // 블록 쌓기 시작 위치
 
+    private Coroutine spawnRoutine;
     void Start()
     {
-        StartCoroutine(MakeObstacleCo());
+        spawnRoutine =  StartCoroutine(MakeObstacleCo());
     }
     IEnumerator MakeObstacleCo()
     {
@@ -90,4 +91,5 @@ public class SpawnObstacle : MonoBehaviour
         //스프라이트랑 콜라이더가 없다면 스케일 1기준으로 임의값
         return 1f;
     }
+
 }

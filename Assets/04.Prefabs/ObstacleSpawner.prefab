@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3520007037211910824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 198201736769124017}
+  - component: {fileID: 956729997244329663}
+  - component: {fileID: 886605954607295725}
+  - component: {fileID: 3352818491981023582}
+  m_Layer: 0
+  m_Name: ObstacleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &198201736769124017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520007037211910824}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &956729997244329663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520007037211910824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674a44b7fafee9f498ef10d48268c742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstaclePrefabs:
+  - {fileID: 2371953145110826743, guid: 3be345b4f97c77749b23c6e0c3b7628b, type: 3}
+  - {fileID: 8567513118538987587, guid: b594510b152f60347bfb6094febda976, type: 3}
+  - {fileID: 2568427950345418131, guid: 18fc72614585fca4a9b823692249822d, type: 3}
+  - {fileID: 5747993289826326459, guid: 62a9e894ab4fdc1498d7449a5b37865e, type: 3}
+  - {fileID: 5002040015343992011, guid: 73a51777a6455b247a580444e0b1f093, type: 3}
+  - {fileID: 7545568117220035719, guid: 1518f882dda0cc14a82797670ae2aacd, type: 3}
+--- !u!114 &886605954607295725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520007037211910824}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4cfc6ebdca0c2748a3fc1c0fe64a1ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnObstaclePrefab: {fileID: 0}
+  interval: 2
+  spawnPoint: {fileID: 0}
+--- !u!114 &3352818491981023582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520007037211910824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a65c7af9cffd341b5f64ea1e6d439a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  loop: 1
+  offscreenMargin: 1
+  resetPoint: {fileID: 198201736769124017}
