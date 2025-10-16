@@ -1190,10 +1190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpFos: 5.5
   rotationSpeed: 5.5
-<<<<<<< HEAD
-  rb: {fileID: 0}
-=======
->>>>>>> 8829f1e0215dc4e69fa1cc60dfa84c25d7f4ea08
 --- !u!212 &1360465944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1243,11 +1239,7 @@ SpriteRenderer:
   m_Size: {x: 0.24, y: 0.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-<<<<<<< HEAD
-  m_WasSpriteAssigned: 0
-=======
   m_WasSpriteAssigned: 1
->>>>>>> 8829f1e0215dc4e69fa1cc60dfa84c25d7f4ea08
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1360465945
@@ -1432,11 +1424,6 @@ MonoBehaviour:
   currnetTimeText: {fileID: 1961327458}
   countDown: {fileID: 374692534}
   passingPoint: {fileID: 0}
-<<<<<<< HEAD
-  isGameOver: 0
-  currentTime: 0
-=======
->>>>>>> 8829f1e0215dc4e69fa1cc60dfa84c25d7f4ea08
   point: 0
 --- !u!4 &1966522490
 Transform:
@@ -1483,10 +1470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLayer:
-<<<<<<< HEAD
-=======
     serializedVersion: 2
->>>>>>> 8829f1e0215dc4e69fa1cc60dfa84c25d7f4ea08
     m_Bits: 0
   layerLength: 10
 --- !u!4 &2078506438
