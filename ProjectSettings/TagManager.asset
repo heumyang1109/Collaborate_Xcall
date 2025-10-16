@@ -3,22 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - Wall
-=======
-  - Obstacle
-  - Wall
-  - GroundDestroyer
->>>>>>> 6c698530e2ffd8ed14955fd21bed502f079fc3f0
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Wall
+  - 
   - Water
   - UI
-  - Wall
+  - 
   - 
   - 
   - 
@@ -45,18 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: back
-    uniqueID: 2811850487
-    locked: 0
-  - name: middle
-    uniqueID: 3183530845
-    locked: 0
-  - name: front
-    uniqueID: 3885473767
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Map
-    uniqueID: 31984755
     locked: 0
