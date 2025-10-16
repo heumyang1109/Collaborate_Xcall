@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: aa19f24b9b1ef5f42a75702002bc6d76
+=======
+<<<<<<< HEAD:Assets/01.Scenes/ObstacleScene.unity.meta
+guid: aa19f24b9b1ef5f42a75702002bc6d76
+=======
+guid: 544eef4cbbbef884689c0b7c9d198735
+>>>>>>> dev:Assets/01.Scenes/SampleScene.unity.meta
+>>>>>>> 4782d3deeac8e2052411a2081e326852d678199c
 DefaultImporter:
   externalObjects: {}
   userData: 

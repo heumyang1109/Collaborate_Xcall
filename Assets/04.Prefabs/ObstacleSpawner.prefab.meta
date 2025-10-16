@@ -1,6 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1b253e81702f6c94b89235271cc22ca0
 PrefabImporter:
+=======
+<<<<<<< HEAD:Assets/04.Prefabs/ObstacleSpawner.prefab.meta
+guid: 1b253e81702f6c94b89235271cc22ca0
+PrefabImporter:
+=======
+guid: 9139e0480926a274c92513a66eddde2f
+folderAsset: yes
+DefaultImporter:
+>>>>>>> dev:Assets/Pixel Bird.meta
+>>>>>>> 4782d3deeac8e2052411a2081e326852d678199c
   externalObjects: {}
   userData: 
   assetBundleName: 
