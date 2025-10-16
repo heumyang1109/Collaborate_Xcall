@@ -1086,6 +1086,8 @@ GameObject:
   - component: {fileID: 1360465943}
   - component: {fileID: 1360465942}
   - component: {fileID: 1360465941}
+  - component: {fileID: 1360465947}
+  - component: {fileID: 1360465946}
   m_Layer: 2
   m_Name: bird5
   m_TagString: Untagged
@@ -1188,8 +1190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86970a38e393064f89ac0b53645b825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpFos: 5.5
-  rotationSpeed: 5.5
 --- !u!212 &1360465944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1257,6 +1257,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1360465946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360465940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5284716ab54471649b9314d1a2b847ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  layerLength: 0
+--- !u!114 &1360465947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360465940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe4e70e278061b4596e90fb52783f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpFos: 5.5
+  rotationSpeed: 5.5
 --- !u!1 &1961327456
 GameObject:
   m_ObjectHideFlags: 0
