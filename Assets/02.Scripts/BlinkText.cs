@@ -21,7 +21,7 @@ public class BlinkText : MonoBehaviour
         timer += Time.deltaTime * blinkSpeed;
 
         // 부드러운 깜빡임 효과
-        float alpha = (Mathf.Sin(timer) + 1f) / 2f; // 0~1 사이 값
+        float alpha = (Mathf.Sin(timer) + 1.5f) / 2f; // 0~1 사이 값
 
         if (text != null)
         {

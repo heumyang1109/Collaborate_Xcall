@@ -7,11 +7,14 @@ public class SequentialWaveText : MonoBehaviour
 {
     [Header("Wave Settings")]
     [SerializeField] private Text textOne;          // 첫 번째 텍스트
-    [SerializeField] private Text textTwo;          // 두 번째 텍스트
     [SerializeField] private float animationDuration = 0.3f; // 각 글자 애니메이션 시간
     [SerializeField] private float waveHeight = 10f;// 위아래 이동 높이
     [SerializeField] private float letterDelay = 0.1f; // 글자 간 시작 간격
     [SerializeField] private float holdDelay = 0.5f;   // 마지막 글자 후 대기 시간
+
+    [Header("Blink Settings")]
+    [SerializeField] private Text textStart;          // 스타트 버튼 텍스트
+    [SerializeField] private float blinkSpeed = 1f;   // 깜빡이는 속도
 
     private bool isRunning = false;
 
@@ -27,10 +30,18 @@ public class SequentialWaveText : MonoBehaviour
         if (textOne != null)
             yield return StartCoroutine(AnimateText(textOne));
 
-        if (textTwo != null)
-            yield return StartCoroutine(AnimateText(textTwo));
-
         isRunning = false;
+
+        // 애니메이션 끝나면 textStart에 BlinkText 스크립트 추가 및 실행
+        if (textStart != null)
+        {
+            BlinkText blinkText = textStart.gameObject.GetComponent<BlinkText>();
+            if (blinkText == null)
+            {
+                blinkText = textStart.gameObject.AddComponent<BlinkText>();
+            }
+            blinkText.enabled = true;
+        }
     }
 
     private IEnumerator AnimateText(Text targetText)
