@@ -24,7 +24,9 @@ public class PlayerControll : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            AudioManager.Instance.PlayJumpSound();
             rb.AddForce(Vector2.up * jumpFos, ForceMode2D.Impulse);
+            
         }
 
         //캐릭터 몸 방향이 점프누를때 위로, 떨어질때 아래로
@@ -41,6 +43,7 @@ public class PlayerControll : MonoBehaviour
             GameManager gameManager = FindAnyObjectByType<GameManager>();
             if (gameManager != null)
             {
+                AudioManager.Instance.PlayGameOverSound();
                 gameManager.EndGame();
 
             }

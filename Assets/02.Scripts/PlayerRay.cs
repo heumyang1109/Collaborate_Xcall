@@ -27,6 +27,7 @@ public class PlayerRay : MonoBehaviour
                 gameManager.point += 1;
                 hitWall = true;
                 gameManager.passingPoint.text = "Score " + (int)gameManager.point;
+                AudioManager.Instance.PlayCheckpointSound();
             }
         }
         else

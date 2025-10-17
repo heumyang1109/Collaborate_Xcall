@@ -20,6 +20,7 @@ public class SequentialWaveText : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.PlayBGM("title");
         StartCoroutine(PlaySequentialWave());
     }
 
